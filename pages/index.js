@@ -9,7 +9,7 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newPost = { title, author, quote, date: new Date().toISOString() };
-    setPosts([newPost, ...posts]); // 先頭に追加
+    setPosts([newPost, ...posts]);
     setTitle('');
     setAuthor('');
     setQuote('');
